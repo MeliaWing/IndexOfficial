@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html lang='en-us'>
     <head>
 		<meta charset='utf-8' />
@@ -13,35 +13,49 @@
 		section{
 			padding:15px;
 		}
+		
 		#top-row {
-			background-color: #37326F;
+			width:100%;
 		}
 		
 		#middle-row {
-			background-color: #67648A;
+			width: 100%;
 		}
 		
 		#bottom-row {
 			background-color: #37326F;
 			text-align: center;
-			width:80%;
+			width:100%;
 			margin:0 auto;
+			margin-top:40px;
+		}
+		
+		#fullwidth {
+			width: 98%;
+			margin-left:20px;
+			margin-top:10px;
+		}
+		
+		.leftcol {
+			width: 48%;
+			flex: 1 0 15em;
+			margin: .5em;
 		}
 		
 		.rightcol {
-			width:50%;
-			
-		}
-		
-		
-		.leftcol {
-			width:50%;
+			width: 48%;
+			flex: 1 0 15em;
+			margin: .5em;
 		}
 		
 		nav {
 			color: #A0753A;
 			background-color: #05003C;
 			font-size: 1.1em=110%;
+			width: 100%;
+			display:flex;
+			flex-flow:row wrap;
+			margin-bottom:10px;
 		}
 		
 		h1 {
@@ -59,13 +73,74 @@
 			margin: 2px;
 		}
         
+		img {
+			max-width: 100%;
+		}
+		
+		footer {
+			background-color: #05003C;
+			margin-top:10px;
+			padding:10px;
+			float:left;
+			width:100%;
+		}
+		
+		#section1, #section2 {
+			display: flex;
+			flex-flow:row wrap;
+		}
+		
+		.leftcol {
+			width: 48%;
+			flex: 1 0 15em;
+		}
+		
+		.rightcol {
+			width: 48%;
+			flex: 1 0 15em;
+			margin-left:500px;
+			margin-top:-270px;
+		}
+		
+		#first {
+			background-color: #37326F;
+			padding:10px;
+			height:300px;
+			display:flex;
+			align-items:center;
+		}
+		
+		#second {
+			background-color: #67648A;
+			height:300px;
+			margin-top:-350px;
+			padding:10px;
+			display:flex;
+			align-items:center;
+		}
+		
+		#rapid, #relax {
+			margin-top:-20px;
+		}
+		
+		#logo {
+			float:left;
+		}
+		
+		#social1, #social2, #social3 {
+			height:50px;
+			float:right;
+			margin-right:50px;
+			margin-top:-25px;
+		}
+		
 		</style>
     </head>
     <body>
 	<div class="body">
 		<div class="content">
-        <img src="http://brothert.net/dryoar/images/dryoarlogo.png" alt="Dry Oar boating logo">
-		<nav>
+        <nav>
+		<div id="fullwidth"><img id="logo" src="http://brothert.net/dryoar/images/dryoarlogo.png" alt="Dry Oar boating logo"></div>
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="index.html">Rivers We Run</a></li>
@@ -79,36 +154,40 @@
 		<img src="http://brothert.net/dryoar/images/river-wide.JPG" alt="Wide Banner Image">
 		
 		<section id="top-row">
-		<div class='leftcol'>
-			<h1>We run rivers to relax.</h1>
-			<p>We believe that there is nothing like a river trip for relaxing. That is why we subscribe to the dry oar philosophy of boating. Keeping your oars dry for us means taking time to look around and notice the beauty that surrounds the rivers we love.</p>
-		</div>
-		<div class='rightcol'>
-			<img src="http://brothert.net/dryoar/images/deso-boats.jpg" alt="Relaxing Rafting">
+			<div class="leftcol">
+				<div id="first">
+					<h1>We run rivers to relax.</h1>
+					<p>We believe that there is nothing like a river trip for relaxing. That is why we subscribe to the dry oar philosophy of boating. Keeping your oars dry for us means taking time to look around and notice the beauty that surrounds the rivers we love.</p>
+				</div>
 			</div>
+			<div class="rightcol">
+				<img id="relax" src="http://brothert.net/dryoar/images/deso-boats.jpg" alt="Relaxing Rafting">
+				</div>
 		</section>
 		
 		<section id="middle-row">
-		<div class='leftcol'>
-			<img src="http://brothert.net/dryoar/images/raft-rapid.jpg" alt="Rapid Rafting">
-		</div>
-		<div class='rightcol'>
-			<h1>We run Whitewater for the rush!</h1>
-			<p>That doesn't mean we don't also like rapids. Opposites in all things after all. We believe that that tenseness that comes when you are looking down the tongue of a big string of waves makes you appreciate the calm beautiful water that always follows even more.</p>
-		</div>
+			<div class="leftcol">
+				<img id="rapid" src="http://brothert.net/dryoar/images/raft-rapid.jpg" alt="Rapid Rafting">
+			</div>
+			<div class="rightcol">
+				<div id="second">
+					<h1>We run Whitewater for the rush!</h1>
+					<p>That doesn't mean we don't also like rapids. Opposites in all things after all. We believe that that tenseness that comes when you are looking down the tongue of a big string of waves makes you appreciate the calm beautiful water that always follows even more.</p>
+				</div>
+			</div>
 		</section>
 		
 		<section id="bottom-row">
 			<h1> Come run with us!</h1>
 			<p>We invite you to come relax with us on one of the amazing rivers we visit. Check out our trips and let us know which one best suits you. 
 			We're waiting to hear from you!</p>
-			<img src = "twitter.png">
-			<img src = "instagram.png">
-			<img src = "facebook.png">
 		</section>
 		
 		<footer>
-			<p>&copy; 2016 Dry Oar || Melia Wing <p>
+			<p>&copy; 2016 Dry Oar || Melia Wing</p>
+			<img id="social1" src="twitter.png" alt="Twitter Logo">
+			<img id="social2" src="instagram.png" alt="Instagram Logo">
+			<img id="social3" src="facebook.png" alt="Facebook Logo">
 		</footer>
 		</div>
 	</div>

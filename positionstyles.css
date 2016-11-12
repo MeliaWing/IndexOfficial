@@ -1,5 +1,7 @@
 /* CSS - Name: "positionstyles.css" */
 /* Activity 1 styles */
+/**{
+	box-sizing: border-box}*/
 	.content1 div{
 		float:left;
 	}
@@ -108,21 +110,21 @@
     width: 270px; 
     height: 100px; 
     background-color: green; 
-	margin-top: -10 px;
-	margin-bottom: 10px;
+	float:left;
+	margin-top:-50px;
      } 
     .yellow5 {
     width: 270px; 
     height: 100px; 
     background-color: gold; 
-	margin-left: 330px;
-	margin-top: -160px;
-	margin-bottom:15px;
+	float:right;
+	margin-top:-50px;
     } 
     .blue5 {
     width: 600px; 
     height: 100px; 
-    background-color: blue; 
+    background-color: blue;
+	margin-top: 70px;
      } 
      /* Activity 6 styles */ 
     .red6 {
@@ -132,23 +134,20 @@
     } 
     .green6 {
     width: 200px; 
-    height: 170px; 
-    background-color: green; 
+    height: 200px; 
+    background-color: green;
+	float:left;
+	margin-right:15px;
      } 
     .yellow6 {
-    width: 400px; 
-    height: 220px; 
+    width: 600px; 
+    height: 350px; 
     background-color: gold;
-	float:right;
-	margin-left:200px;
-	overflow-x: auto;
-	margin-top:-170px;
     } 
     .blue6 {
     width: 600px; 
     height: 100px; 
     background-color: blue;
-	margin-top: 50px;
     } 
      .activity {
     width: 600px; 
