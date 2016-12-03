@@ -28,7 +28,7 @@ nav {
 	color: #A0753A;
 	background-color: #05003C;
 	font-size: 1.1em=100%;
-	width: 90%;
+	width: 100%;
 	margin-top:-95px;
 	margin-left:110px;
 	margin-bottom:10px;
@@ -76,6 +76,11 @@ nav a:hover {
 	margin-top:40px;
 	overflow:auto;
 	}
+
+#top-row-river {
+	width:100%;
+	flex-flow: row wrap;
+	}
 		
 .leftcol {
 	width: 48%;
@@ -109,7 +114,7 @@ img {
 	max-width: 100%;
 	}
 		
-#first,#second {
+#first,#second,#third {
 	background-color: #37326F;
 	padding:20px;
 	height:300px;
@@ -120,7 +125,12 @@ img {
 #second {
 	position:absolute;
 	left:700px;
-	top:723px;
+	top:580px;
+	}
+	
+#third {
+	position:absolute;
+	top:940px;
 	}
 	
 #relax {
@@ -129,6 +139,26 @@ img {
 	left:680px;
 	top:340px;
 	}
+	
+#snake {
+	position:absolute;
+	left:680px;
+	top:240px;
+	width:500px;
+	}
+	
+#grande {
+	position:absolute;
+	top:650px;
+	width:350px;
+	}
+	
+#wen {
+	position:absolute;
+	top:970px;
+	left:680px;
+	width:350px;
+	}
 
 footer {
 	background-color: #05003C;
@@ -136,6 +166,14 @@ footer {
 	padding:10px;
 	float:left;
 	width:100%;
+	}
+	
+#river{
+	background-color: #05003C;
+	margin-top:650px;
+	padding:10px;
+	float:left;
+	width:150%;
 	}
 		
 #social1, #social2, #social3 {
